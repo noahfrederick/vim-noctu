@@ -46,8 +46,15 @@ hi DiffAdd             ctermfg=0     ctermbg=2
 hi DiffChange          ctermfg=0     ctermbg=3
 hi DiffDelete          ctermfg=0     ctermbg=1
 hi DiffText            ctermfg=0     ctermbg=11  cterm=bold
-hi User1               ctermfg=7     ctermbg=13
-hi User2               ctermfg=0     ctermbg=6
+hi User1               ctermfg=7     ctermbg=6
+hi User2               ctermfg=7     ctermbg=4
+hi User3               ctermfg=7     ctermbg=3
+hi User4               ctermfg=7     ctermbg=1
+hi User5               ctermfg=7     ctermbg=13
+hi User6               ctermfg=7     ctermbg=14
+hi User7               ctermfg=7     ctermbg=12
+hi User8               ctermfg=7     ctermbg=11
+hi User9               ctermfg=7     ctermbg=9
 hi! link CursorColumn  CursorLine
 hi! link SignColumn    Normal
 hi! link WildMenu      Visual
