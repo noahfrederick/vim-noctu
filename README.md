@@ -10,7 +10,7 @@ ANSI colors (0 through 15), the representation of which can be redefined by
 configuring your terminal emulator. This means that you can change your color
 scheme "globally" without having to edit this script.
 
-The colorscheme has been tested against the following file types:
+The color scheme has been tested against the following file types:
 
 - CSS
 - Git (commit messages, etc.)
@@ -26,6 +26,14 @@ The colorscheme has been tested against the following file types:
 - Vimwiki
 - XML
 - YAML
+
+## Appearance
+
+Here's what Noctu looks like in OS X's Terminal.app with a custom theme:
+
+![Screen shot of Terminal](example.png)
+
+Notice that vim, tmux, and the output from git-log share the same palette.
 
 ## Installation
 
