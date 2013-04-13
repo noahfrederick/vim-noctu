@@ -1,7 +1,7 @@
 " noctu.vim - Vim color scheme for 16-color terminals
 " --------------------------------------------------------------
 " Author:   Noah Frederick (http://noahfrederick.com/)
-" Version:  1.2.3
+" Version:  1.2.4
 " --------------------------------------------------------------
 
 " Scheme setup {{{
@@ -133,7 +133,7 @@ hi! link markdownLinkDelimiter      Delimiter
 hi! link markdownURLDelimiter       Delimiter
 hi! link markdownCodeDelimiter      NonText
 hi! link markdownLinkTextDelimiter  markdownLinkDelimiter
-hi! link markdownUrl                markdownLinkDelimiter
+hi! link markdownUrl                markdownLinkText
 hi! link markdownAutomaticLink      markdownLinkText
 hi! link markdownCodeBlock          String
 hi markdownCode                     cterm=bold
