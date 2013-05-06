@@ -1,7 +1,7 @@
 " noctu.vim - Vim color scheme for 16-color terminals
 " --------------------------------------------------------------
 " Author:   Noah Frederick (http://noahfrederick.com/)
-" Version:  1.2.9
+" Version:  1.3.0
 " --------------------------------------------------------------
 
 " Scheme setup {{{
@@ -91,16 +91,16 @@ hi! link Error     ErrorMsg
 "}}}
 " HTML {{{
 hi htmlTagName              ctermfg=2
-hi htmlTag                  ctermfg=10
+hi htmlTag                  ctermfg=2
+hi htmlArg                  ctermfg=10
+hi htmlH1                   cterm=bold
 hi htmlBold                 cterm=bold
 hi htmlItalic               cterm=underline
 hi htmlUnderline            cterm=underline
-hi htmlBoldItalic           cterm=bold
+hi htmlBoldItalic           cterm=bold,underline
 hi htmlBoldUnderline        cterm=bold,underline
 hi htmlUnderlineItalic      cterm=underline
 hi htmlBoldUnderlineItalic  cterm=bold,underline
-hi! link htmlArg            htmlTag
-hi! link htmlString         htmlTagName
 hi! link htmlLink           Underlined
 hi! link htmlEndTag         htmlTag
 
@@ -197,6 +197,14 @@ hi! link helpURL             Underlined
 " CtrlP {{{
 hi! link CtrlPMatch    String
 hi! link CtrlPLinePre  Comment
+
+"}}}
+" Mustache {{{
+hi mustacheSection           ctermfg=14  cterm=bold
+hi mustacheMarker            ctermfg=6
+hi mustacheVariable          ctermfg=14
+hi mustacheVariableUnescape  ctermfg=9
+hi mustachePartial           ctermfg=13
 
 "}}}
 
