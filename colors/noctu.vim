@@ -1,7 +1,7 @@
 " noctu.vim - Vim color scheme for 16-color terminals
 " --------------------------------------------------------------
 " Author:   Noah Frederick (http://noahfrederick.com/)
-" Version:  1.4.0
+" Version:  1.5.0
 " --------------------------------------------------------------
 
 " Scheme setup {{{
@@ -205,6 +205,11 @@ hi mustacheMarker            ctermfg=6
 hi mustacheVariable          ctermfg=14
 hi mustacheVariableUnescape  ctermfg=9
 hi mustachePartial           ctermfg=13
+
+"}}}
+" Shell {{{
+hi shDerefSimple     ctermfg=11
+hi! link shDerefVar  shDerefSimple
 
 "}}}
 
