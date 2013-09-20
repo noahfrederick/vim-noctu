@@ -34,7 +34,7 @@ hi CursorLineNr        ctermfg=11    ctermbg=0
 hi Visual              ctermfg=0     ctermbg=12
 hi IncSearch           ctermfg=0     ctermbg=13    cterm=NONE
 hi Search              ctermfg=0     ctermbg=10
-hi StatusLine          ctermfg=7     ctermbg=5     cterm=bold
+hi StatusLine          ctermfg=7     ctermbg=0     cterm=bold
 hi StatusLineNC        ctermfg=8     ctermbg=0     cterm=bold
 hi VertSplit           ctermfg=0     ctermbg=0     cterm=NONE
 hi TabLine             ctermfg=8     ctermbg=0     cterm=NONE
@@ -47,8 +47,8 @@ hi DiffAdd             ctermfg=0     ctermbg=2
 hi DiffChange          ctermfg=0     ctermbg=3
 hi DiffDelete          ctermfg=0     ctermbg=1
 hi DiffText            ctermfg=0     ctermbg=11    cterm=bold
-hi User1               ctermfg=15    ctermbg=6
-hi User2               ctermfg=15    ctermbg=4
+hi User1               ctermfg=15    ctermbg=5
+hi User2               ctermfg=15    ctermbg=8
 hi User3               ctermfg=15    ctermbg=3
 hi User4               ctermfg=15    ctermbg=0
 hi User5               ctermfg=15    ctermbg=13
