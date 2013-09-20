@@ -1,7 +1,7 @@
 " noctu.vim - Vim color scheme for 16-color terminals
 " --------------------------------------------------------------
 " Author:   Noah Frederick (http://noahfrederick.com/)
-" Version:  1.6.0
+" Version:  1.7.0
 " --------------------------------------------------------------
 
 " Scheme setup {{{
@@ -215,6 +215,11 @@ hi! link shDerefVar  shDerefSimple
 " Syntastic {{{
 hi SyntasticWarningSign  ctermfg=3   ctermbg=NONE
 hi SyntasticErrorSign    ctermfg=1   ctermbg=NONE
+
+"}}}
+" Netrw {{{
+hi netrwExe       ctermfg=9
+hi netrwClassify  ctermfg=8  cterm=bold
 
 "}}}
 
