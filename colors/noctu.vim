@@ -1,7 +1,7 @@
 " noctu.vim - Vim color scheme for 16-color terminals
 " --------------------------------------------------------------
 " Author:   Noah Frederick (http://noahfrederick.com/)
-" Version:  1.7.0
+" Version:  1.8.0
 " --------------------------------------------------------------
 
 " Scheme setup {{{
@@ -12,10 +12,11 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name="noctu"
+let g:colors_name = "noctu"
 
 "}}}
 " Vim UI {{{
+hi Normal              ctermfg=7
 hi Cursor              ctermfg=7     ctermbg=1
 hi CursorLine          ctermbg=0     cterm=NONE
 hi MatchParen          ctermfg=7     ctermbg=NONE  cterm=underline
@@ -39,7 +40,8 @@ hi StatusLineNC        ctermfg=8     ctermbg=0     cterm=bold
 hi VertSplit           ctermfg=0     ctermbg=0     cterm=NONE
 hi TabLine             ctermfg=8     ctermbg=0     cterm=NONE
 hi TabLineSel          ctermfg=7     ctermbg=0
-hi Folded              ctermfg=3     ctermbg=0
+hi Folded              ctermfg=6     ctermbg=0     cterm=bold
+hi Conceal             ctermfg=6     ctermbg=NONE
 hi Directory           ctermfg=12
 hi Title               ctermfg=3     cterm=bold
 hi ErrorMsg            ctermfg=15    ctermbg=1
@@ -47,15 +49,15 @@ hi DiffAdd             ctermfg=0     ctermbg=2
 hi DiffChange          ctermfg=0     ctermbg=3
 hi DiffDelete          ctermfg=0     ctermbg=1
 hi DiffText            ctermfg=0     ctermbg=11    cterm=bold
-hi User1               ctermfg=15    ctermbg=5
-hi User2               ctermfg=15    ctermbg=8
-hi User3               ctermfg=15    ctermbg=3
-hi User4               ctermfg=15    ctermbg=0
-hi User5               ctermfg=15    ctermbg=13
-hi User6               ctermfg=15    ctermbg=14
-hi User7               ctermfg=15    ctermbg=12
-hi User8               ctermfg=15    ctermbg=11
-hi User9               ctermfg=15    ctermbg=8
+hi User1               ctermfg=1     ctermbg=0
+hi User2               ctermfg=4     ctermbg=0
+hi User3               ctermfg=2     ctermbg=0
+hi User4               ctermfg=3     ctermbg=0
+hi User5               ctermfg=5     ctermbg=0
+hi User6               ctermfg=6     ctermbg=0
+hi User7               ctermfg=7     ctermbg=0
+hi User8               ctermfg=8     ctermbg=0
+hi User9               ctermfg=15    ctermbg=5
 hi! link CursorColumn  CursorLine
 hi! link SignColumn    LineNr
 hi! link WildMenu      Visual
@@ -73,7 +75,7 @@ hi Delimiter       ctermfg=7
 hi Comment         ctermfg=8
 hi Underlined      ctermfg=4   cterm=underline
 hi Type            ctermfg=4
-hi String          ctermfg=9
+hi String          ctermfg=11
 hi Keyword         ctermfg=2
 hi Todo            ctermfg=15  ctermbg=NONE     cterm=bold,underline
 hi Function        ctermfg=4
@@ -84,8 +86,8 @@ hi Number          ctermfg=12
 hi Boolean         ctermfg=4
 hi Special         ctermfg=13
 hi Ignore          ctermfg=0
+hi PreProc         ctermfg=8   cterm=bold
 hi! link Operator  Delimiter
-hi! link PreProc   Delimiter
 hi! link Error     ErrorMsg
 
 "}}}
@@ -122,6 +124,7 @@ hi! link javaScriptBraces  Delimiter
 " PHP {{{
 hi phpSpecialFunction    ctermfg=5
 hi phpIdentifier         ctermfg=11
+hi phpParent             ctermfg=8
 hi! link phpVarSelector  phpIdentifier
 hi! link phpHereDoc      String
 hi! link phpDefine       Statement
@@ -213,13 +216,38 @@ hi! link shDerefVar  shDerefSimple
 
 "}}}
 " Syntastic {{{
-hi SyntasticWarningSign  ctermfg=3   ctermbg=NONE
-hi SyntasticErrorSign    ctermfg=1   ctermbg=NONE
+hi SyntasticWarningSign       ctermfg=3  ctermbg=NONE
+hi SyntasticErrorSign         ctermfg=1  ctermbg=NONE
+hi SyntasticStyleWarningSign  ctermfg=2  ctermbg=NONE
+hi SyntasticStyleErrorSign    ctermfg=4  ctermbg=NONE
 
 "}}}
 " Netrw {{{
 hi netrwExe       ctermfg=9
 hi netrwClassify  ctermfg=8  cterm=bold
+
+"}}}
+" Ledger {{{
+hi ledgerAccount  ctermfg=11
+hi! link ledgerMetadata  Comment
+hi! link ledgerTransactionStatus  Statement
+
+"}}}
+" Diff {{{
+hi diffAdded  ctermfg=2
+hi diffRemoved  ctermfg=1
+hi! link diffFile  PreProc
+hi! link diffLine  Title
+
+"}}}
+" Plug {{{
+hi plugSha  ctermfg=3
+
+"}}}
+" Blade {{{
+hi! link bladeStructure  PreProc
+hi! link bladeParen      phpParent
+hi! link bladeEchoDelim  PreProc
 
 "}}}
 
