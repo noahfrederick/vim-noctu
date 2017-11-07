@@ -73,7 +73,7 @@ hi Delimiter       ctermfg=7
 hi Comment         ctermfg=8
 hi Underlined      ctermfg=4   cterm=underline
 hi Type            ctermfg=4
-hi String          ctermfg=9
+hi String          ctermfg=14
 hi Keyword         ctermfg=2
 hi Todo            ctermfg=15  ctermbg=NONE     cterm=bold,underline
 hi Function        ctermfg=4
